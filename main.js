@@ -1,5 +1,6 @@
 const nextBtn = document.querySelector('.swiper-button-next');
 const prevBtn = document.querySelector('.swiper-button-prev');
+const voiceBtn = document.querySelector('#voice-btn');
 const slide = document.querySelectorAll('.swiper-slide');
 
 const command = {
@@ -53,6 +54,10 @@ const recognition = new webkitSpeechRecognition();
 recognition.continuous = true; // 상시 마이크 감지 설정
 recognition.lang = 'ko-KR'; // 인식할 언어 설정
 recognition.start(); // 음성 인식 시작
+
+voiceBtn.addEventListener('click', () => {
+  recognition.start();
+});
 
 // 음성 인식 결과 처리
 recognition.onresult = (event) => {
