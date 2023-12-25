@@ -77,6 +77,4 @@ recognition.onresult = (event) => {
     movePage(3);
   }
   checkData(transcript);
-
-  console.log(transcript);
 };
