@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="/vite.svg"
+      type="image/x-icon" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>swiper</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/tesseract.js@4.0.1/dist/tesseract.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer></script>
+    <link
+      rel="stylesheet"
+      href="./style.css" />
+    <script
+      type="module"
+      src="./main.js"></script>
+  </head>
+  <body class="h-screen bg-slate-300">
+    <div class="swiper mySwiper h-screen">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide flex justify-center items-center"
+          data-title="타짜"
+          data-index="1">
+          <figure class="w-8/12 max-w-700pxr space-y-8pxr">
+            <img
+              src="/1.webp"
+              alt="타짜 포스터" />
+            <figcaption class="text-32pxr font-bold text-center">
+              오 재밌었음 추천.
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          class="swiper-slide flex justify-center items-center"
+          data-title="올드보이"
+          data-index="2">
+          <figure class="w-8/12 max-w-700pxr space-y-8pxr">
+            <img
+              src="/2.webp"
+              alt="올드보이 포스터" />
+            <figcaption class="text-32pxr font-bold text-center">
+              그냥 저냥 볼만함.
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          class="swiper-slide flex justify-center items-center"
+          data-title="성냥팔이소녀의재림"
+          data-index="3">
+          <figure class="w-8/12 max-w-700pxr space-y-8pxr">
+            <img
+              src="/3.webp"
+              alt="성냥팔이소녀의재림 포스터" />
+            <figcaption class="text-32pxr font-bold text-center">
+              명작. 꼭 보세요.
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          class="swiper-slide flex justify-center items-center"
+          data-title="클레멘타인"
+          data-index="4">
+          <figure class="w-8/12 max-w-700pxr space-y-8pxr">
+            <img
+              src="/4.webp"
+              alt="클레멘타인 포스터" />
+            <figcaption class="text-32pxr font-bold text-center">
+              명작. 꼭 보세요2.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </body>
+</html>
